@@ -2,17 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
-      <a class="logo" href="">
+    <header class="page__header">
+      <a class="logo">
         <picture>
-          <img src="" alt="">
+          <img src="" alt="Drink2Go">
         </picture>
         <span>Интернет-магазин кофейных напитков</span>
       </a>
@@ -20,47 +20,47 @@
       <nav>
         <ul>
           <li>
-            <a href="">Главная</a>
+            <a>Главная</a>
           </li>
           <li>
-            <a href="">Каталог</a>
+            <a href="#">Каталог</a>
           </li>
           <li>
-            <a href="">Доставка</a>
+            <a href="#">Доставка</a>
           </li>
           <li>
-            <a href="">О нас</a>
+            <a href="#">О нас</a>
           </li>
         </ul>
       </nav>
 
       <ul>
         <li>
-          <a href="">
+          <a href="#">
             <span>Войти</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span>Корзина</span>
           </a>
         </li>
       </ul>
     </header>
-    <main>
-      <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков</h1>
+    <main class="page__main">
+      <h1 class="visually-hidden">Интернет-магазин по продаже кофейных напитков</h1>
 
       <section class="promo">
-        <div>
-          <div class="slide">
-            <span>Новинка!</span>
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <span>
-              <span>295₽</span>
+        <div class="promo__slider">
+          <div class="promo__slide slide">
+            <span class="slide__badge">Новинка!</span>
+            <h3 class="slide__heading">Декаф Флэт Уайт</h3>
+            <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <span class="slide__price">
+              <span class="slide__old-price">295₽</span>
               225₽
             </span>
-            <a href="#">Заказать</a>
+            <a class="slide__button" href="#">Заказать</a>
           </div>
 
           <div class="slide">
@@ -88,34 +88,36 @@
       </section>
 
       <section class="advantages">
-        <h2>Преимущества</h2>
-        <p>Главные причины выбрать Drink2Go</p>
+        <div class="advantages__container container">
+          <h2 class="advantages__badge">Преимущества</h2>
+          <p class="advantages__heading">Главные причины выбрать Drink2Go</p>
 
-        <ul>
-          <li>
-            <h3>Скорость</h3>
-            <p>Готовый напиток всегда под рукой — просто открой банку</p>
-          </li>
-          <li>
-            <h3>Удобство</h3>
-            <p>Легко помещается и в карман, и в маленькую сумочку</p>
-          </li>
-          <li>
-            <h3>Бодрость</h3>
-            <p>Сбалансированная доза кофеина даст мощный заряд энергии</p>
-          </li>
-          <li>
-            <h3>Экологичность</h3>
-            <p>Вся упаковка сделана из перерабатываемых материалов</p>
-          </li>
-        </ul>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Скорость</h3>
+              <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Удобство</h3>
+              <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Бодрость</h3>
+              <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Экологичность</h3>
+              <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="catalog">
-        <h2>Каталог</h2>
-        <p>Каталог кофейных напитков</p>
+        <h2 class="catalog__badge">Каталог</h2>
+        <p class="catalog__heading">Каталог кофейных напитков</p>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
 
           <button type="submit">Применить</button>
           <button type="reset">Сбросить</button>
@@ -127,31 +129,36 @@
           </div>
           <div class="catalog__list">
 
-            <article class="catalog__item">
+            <article class="catalog__item card">
               <a href="">
-                <picture>
-                  <img src="" alt="">
+                <picture class="card__picture">
+                  <img class="card__image" src="" alt="">
                 </picture>
               </a>
-              <a href="">
-                <h3>Декаф Флэт Уайт</h3>
+              <a class="card__link" href="">
+                <h3 class="card__title">Декаф Флэт Уайт</h3>
               </a>
-              <p>Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <span>225₽</span>
-              <button>В корзину</button>
+              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <span class="card__price">225₽</span>
+              <button class="card__button button">В корзину</button>
             </article>
 
 
           </div>
-          <div>
-            <button>Назад</button>
+          <div class="catalog__pagination">
+            <a href="#">Назад</a>
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
             </ul>
-            <button>Вперёд</button>
+            <a href="#">Вперёд</a>
           </div>
         </div>
       </section>
@@ -161,68 +168,68 @@
       </section>
 
     </main>
-    <footer>
-      <div>
-        <a class="logo" href="">
+    <footer class="page__footer footer">
+      <div class="footer__info">
+        <a class="footer__logo logo"S>
           <picture>
             <img src="" alt="">
           </picture>
           <span>Интернет-магазин кофейных напитков</span>
         </a>
 
-        <ul>
-          <li>
-            <a href="">
-              <span>ВКонтакте</span>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li>
-            <a href="">
-              <span>Pinterest</span>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">Pinterest</span>
             </a>
           </li>
-          <li>
-            <a href="">
-              <span>Одноклассники</span>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">Одноклассники</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <nav>
-        <h3>Интернет-магазин</h3>
+      <div class="footer__links">
+        <h3 class="footer__title">Интернет-магазин</h3>
 
-        <ul>
-          <li>
-            <a href="">Каталог</a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="">Каталог</a>
           </li>
           <li>
-            <a href="">Доставка</a>
+            <a href="#">Доставка</a>
           </li>
           <li>
-            <a href="">Способы оплаты</a>
+            <a href="#">Способы оплаты</a>
           </li>
           <li>
-            <a href="">О нас</a>
+            <a href="#">О нас</a>
           </li>
         </ul>
-      </nav>
+      </div>
 
-      <nav>
-        <h3>Медиа</h3>
+      <div class="footer__links">
+        <h3 class="footer__title">Медиа</h3>
 
-        <ul>
-          <li>
-            <a href="">Блог</a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Блог</a>
           </li>
-          <li>
-            <a href="">Информация для СМИ</a>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Информация для СМИ</a>
           </li>
-          <li>
-            <a href="">Правовая информация</a>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Правовая информация</a>
           </li>
         </ul>
-      </nav>
+      </div>
 
       <div>
         <h3>Контакты</h3>
@@ -233,7 +240,7 @@
         </address>
       </div>
 
-      <p>Разработано в <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+      <a class="footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано в <span>HTML Academy</span></a>
     </footer>
   </body>
 </html>
