@@ -11,4 +11,9 @@
   background-color: $color-base-primary;
   appearance: none;
   border: none;
+
+  &--secondary {
+    background-color: $color-base-white;
+    color: $color-base-primary;
+  }
 }

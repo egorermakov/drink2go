@@ -1,0 +1,35 @@
+.sorting {
+
+}
+
+.sorting__form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sorting__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sorting__select {
+  margin: 0;
+  padding: 4px 30px 4px 10px;
+  width: 165px;
+  display: flex;
+  gap: 10px;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-primary;
+  background-image: url("../../icons/chevron.svg");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}

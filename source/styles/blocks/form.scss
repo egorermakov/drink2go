@@ -1,0 +1,15 @@
+.form__group {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.form__wrapper-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+}
