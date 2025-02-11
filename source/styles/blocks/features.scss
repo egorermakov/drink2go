@@ -1,0 +1,49 @@
+.features {
+  padding: 50px 0 60px;
+}
+
+.features__badge {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-base-primary;
+}
+
+.features__heading {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.features__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 32px
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.features__description {
+  margin: 0;
+  text-align: center;
+}
