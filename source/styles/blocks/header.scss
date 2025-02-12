@@ -1,0 +1,18 @@
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__toggle {
+  margin-right: -20px;
+  padding: 22px;
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  border: none;
+  box-sizing: content-box;
+  background-image: url("../../icons/burger.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

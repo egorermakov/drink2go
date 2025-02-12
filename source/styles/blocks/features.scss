@@ -46,19 +46,19 @@
   }
 
   &--clock::before {
-    background-image: url("../../icons/clock.svg");
+    background-image: url("../../images/clock.svg");
   }
 
   &--pocket::before {
-    background-image: url("../../icons/pocket.svg");
+    background-image: url("../../images/pocket.svg");
   }
 
   &--lightning::before {
-    background-image: url("../../icons/lightning.svg");
+    background-image: url("../../images/lightning.svg");
   }
 
   &--leaf::before {
-    background-image: url("../../icons/leaf.svg");
+    background-image: url("../../images/leaf.svg");
   }
 }
 

@@ -1,4 +1,25 @@
 .site-menu {
   @include reset-list;
   display: none;
+
+  &--account {
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+.site-menu__link {
+  display: flex;
+  color: $color-base-black;
+}
+
+.site-menu__icon {
+    padding: 22px;
+    width: 16px;
+    height: 16px;
+    box-sizing: content-box;
+}
+
+.site-menu__text {
+  display: none;
 }

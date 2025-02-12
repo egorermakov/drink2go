@@ -40,6 +40,11 @@
   color: $color-base-black;
 }
 
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__developer {
   margin: 20px auto 30px ;
   display: flex;
