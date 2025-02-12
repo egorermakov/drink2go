@@ -27,6 +27,22 @@
   }
 }
 
+.pagination__prev::before,
+.pagination__next::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("../../icons/chevron.svg");
+}
+
+.pagination__prev::before {
+  transform: rotate(90deg);
+}
+
+.pagination__next::before {
+  transform: rotate(-90deg);
+}
+
 .pagination__text {
   display: none;
 }
