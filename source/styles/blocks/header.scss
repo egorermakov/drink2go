@@ -1,18 +1,28 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .header__toggle {
-  margin-right: -20px;
-  padding: 22px;
-  width: 16px;
-  height: 16px;
-  appearance: none;
-  border: none;
-  box-sizing: content-box;
-  background-image: url("../../icons/burger.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-right: -20px;
+    padding: 22px;
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border: none;
+    box-sizing: content-box;
+    background-image: url("../../icons/burger.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 }

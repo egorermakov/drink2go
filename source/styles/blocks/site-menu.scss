@@ -2,13 +2,56 @@
   @include reset-list;
   display: none;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
   &--account {
     margin-left: auto;
     display: flex;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 }
 
+.site-menu__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+}
+
 .site-menu__link {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: $color-base-black;
+
+  &--current {
+    color: $color-base-primary;
+  }
+
+  &--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-base-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+  }
+}
+
+.site-menu__button {
   display: flex;
   color: $color-base-black;
 }
