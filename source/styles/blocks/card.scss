@@ -1,19 +1,64 @@
 .card {
   padding: 40px 20px 20px;
+  width: 100%;
   background-color: $color-base-white;
   border-radius: 4px;
   display: grid;
-  grdi
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "picture picture"
+    "title title"
+    "description description"
+    "price button";
+  column-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+      outline: none;
+    }
+  }
 }
 
-.card__image {}
+.card__picture {
+  grid-area: picture;
+  justify-self: center;
+}
 
-.card__link {}
+.card__link {
+  grid-area: title;
+  text-decoration: none;
+  color: $color-base-black;
+}
 
-.card__title {}
+.card__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
 
-.card__description {}
+.card__description {
+  grid-area: description;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
 
-.card__price {}
+.card__price {
+  grid-area: price;
+  align-self: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
 
-.card__button {}
+.card__button {
+  grid-area: button;
+  font-size: 14px;
+  line-height: 20px;
+}
