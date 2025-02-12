@@ -1,6 +1,17 @@
 .footer__col {
-  padding: 20px 0;
-  border-bottom: 1px solid $color-base-secondary;
+  padding: 20px 0 21px;
+  // position: relative;
+
+  &::after {
+    content: "";
+    margin-top: 21px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 1px;
+    background-color: $color-base-secondary;
+  }
 }
 
 .footer__list {
