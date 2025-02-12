@@ -1,0 +1,32 @@
+.pagination__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pagination__link {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: $color-base-white;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-base-primary;
+  text-decoration: none;
+
+  &--current {
+    font-weight: 600;
+    background: transparent;
+    color: $color-base-black;
+  }
+}
+
+.pagination__text {
+  display: none;
+}

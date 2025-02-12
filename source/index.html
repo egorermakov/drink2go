@@ -13,12 +13,14 @@
 
       <nav class="header__nav">
         <div class="header__container container">
-          <a class="header__logo logo">
-            <picture>
-              <img class="logo__image" src="images/logo-small.svg" width="32" height="36" alt="Drink2Go">
-            </picture>
-          </a>
-          <!-- <span class="">Интернет-магазин кофейных напитков</span> -->
+          <div class="header__logo logo">
+            <a class="logo__link" href="">
+              <picture>
+                <img class="logo__image" src="images/logo-small.svg" width="32" height="36" alt="Drink2Go">
+              </picture>
+            </a>
+            <span class="logo__slogan">Интернет-магазин кофейных напитков</span>
+          </div>
 
           <ul class="header__menu site-menu">
             <li class="site-menu__item">
@@ -268,20 +270,28 @@
 
             </div>
 
-            <div class="catalog__pagination">
-              <a href="#">Назад</a>
-              <ul>
-                <li>
-                  <a href="#">1</a>
+            <div class="catalog__pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__prev" href="#">
+                    <span class="pagination__text">Назад</span>
+                  </a>
                 </li>
-                <li>
-                  <a href="#">2</a>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
                 </li>
-                <li>
-                  <a href="#">3</a>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--current"  href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__next" href="#">
+                    <span class="pagination__text">Вперёд</span>
+                  </a>
                 </li>
               </ul>
-              <a href="#">Вперёд</a>
             </div>
           </div>
         </div>
@@ -294,12 +304,14 @@
     </main>
     <footer class="page__footer footer">
       <div class="footer__info">
-        <a class="footer__logo logo">
-          <picture>
-            <img src="" alt="">
-          </picture>
-          <span>Интернет-магазин кофейных напитков</span>
-        </a>
+        <div class="footer__logo logo">
+          <a class="logo__link" href="">
+            <picture>
+              <img src="" alt="">
+            </picture>
+            <span class="logo__slogan">Интернет-магазин кофейных напитков</span>
+          </a>
+        </d>
 
         <ul class="footer__social social">
           <li class="social__item">
