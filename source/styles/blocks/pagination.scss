@@ -1,3 +1,11 @@
+.pagination {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}
+
 .pagination__list {
   @include reset-list;
   display: flex;
@@ -7,7 +15,7 @@
 
 .pagination__link {
   padding: 8px;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -33,6 +41,10 @@
   width: 10px;
   height: 10px;
   background-image: url("../../icons/chevron.svg");
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
 }
 
 .pagination__prev::before {
@@ -45,4 +57,8 @@
 
 .pagination__text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

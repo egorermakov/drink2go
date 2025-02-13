@@ -9,9 +9,13 @@
   grid-template-areas:
     "picture picture"
     "title title"
-    "description description"
+    "desc desc"
     "price button";
   column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
 
   @media (min-width: $desktop-width) {
     &:hover,
@@ -24,6 +28,7 @@
 
 .card__picture {
   grid-area: picture;
+  margin-bottom: 24px;
   justify-self: center;
 }
 
@@ -41,8 +46,8 @@
   line-height: 32px;
 }
 
-.card__description {
-  grid-area: description;
+.card__desc {
+  grid-area: desc;
   margin: 0;
   margin-bottom: 16px;
   font-size: 14px;
@@ -61,4 +66,18 @@
   grid-area: button;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 16px;
+    background-image: url("../../icons/add-to-cart.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

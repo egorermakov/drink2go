@@ -1,18 +1,26 @@
 .site-menu {
   @include reset-list;
-  display: none;
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
+  .header__nav--closed & {
+    display: none;
   }
 
-  &--account {
-    margin-left: auto;
-    display: flex;
+  .header__nav--opened & {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: $color-base-white;
+    z-index: 1;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+  .header__nav--nojs & {
+    position: static;
+    min-height: 0;
+    display: flex;
   }
 }
 
@@ -22,47 +30,38 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  border-bottom: 1px solid $color-base-secondary;
 
+  &:first-child {
+    border-top: 1px solid $color-base-secondary;
+  }
 }
 
 .site-menu__link {
-  position: relative;
+  padding: 20px;
   display: flex;
+  justify-content: center;
   text-decoration: none;
   color: $color-base-black;
 
-  &--current {
-    color: $color-base-primary;
-  }
+  @media (min-width: $tablet-width) {
+    &--current {
+      color: $color-base-primary;
+    }
 
-  &--current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $color-base-primary;
+    &--current::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-base-primary;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 32px 20px;
   }
-}
-
-.site-menu__button {
-  display: flex;
-  color: $color-base-black;
-}
-
-.site-menu__icon {
-    padding: 22px;
-    width: 16px;
-    height: 16px;
-    box-sizing: content-box;
-}
-
-.site-menu__text {
-  display: none;
 }
