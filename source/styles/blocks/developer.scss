@@ -7,6 +7,10 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-base-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .developer__link {

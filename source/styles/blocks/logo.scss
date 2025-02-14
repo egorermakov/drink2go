@@ -6,8 +6,13 @@
   }
 }
 
+.logo__link {
+  display: block;
+}
+
 .logo__image {
   width: 32px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 82px;
@@ -31,5 +36,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    min-width: 130px;
+    font-size: 12px;
   }
 }

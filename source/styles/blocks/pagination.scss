@@ -28,13 +28,13 @@
   color: $color-base-primary;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     background-color: $color-alt-primary-lighter;
     color: $color-base-white;
   }
 
-  &:active {
+  &[href]:active {
     background-color: $color-alt-primary-darker;
     color: $color-base-white;
   }

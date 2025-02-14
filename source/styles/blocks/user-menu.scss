@@ -2,19 +2,45 @@
   @include reset-list;
   margin-left: auto;
   display: flex;
+  align-self: center;
+  height: auto;
+  align-self: stretch;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.user-menu__item {
+  height: auto;
+  display: flex;
+  align-self: stretch;
 }
 
 .user-menu__link {
   padding: 22px;
   display: flex;
+  align-self: stretch;
   align-items: center;
   gap: 8px;
   text-decoration: none;
   color: $color-base-black;
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      color: $color-base-primary;
+    }
+  }
 }
 
 .user-menu__icon {
@@ -24,6 +50,8 @@
 
 .user-menu__text {
   display: none;
+  font-size: 12px;
+  text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
     display: block;

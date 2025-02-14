@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: stretch;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -36,11 +37,17 @@
   appearance: none;
   border: none;
   box-sizing: content-box;
+  background-color: transparent;
   background-image: url("../../icons/burger.svg");
   background-position: center;
-  background-size: contain;
+  background-size: 16px 16px;
   background-repeat: no-repeat;
   cursor: pointer;
+
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: block;
