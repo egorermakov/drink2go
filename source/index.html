@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font">
     <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
@@ -422,11 +423,14 @@
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
 
-        <picture>
+        <div id="map" class="map__wrapper"></div>
+
+        <picture class="map__picture">
           <source media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,images/map-tablet@2x.png 2x">
           <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 1x, images/map-mobile@2x.png 2x" width="320" height="420" alt="Карта к нашему офису">
         </picture>
+
       </section>
 
     </main>
@@ -529,6 +533,7 @@
     </footer>
 
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
