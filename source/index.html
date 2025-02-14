@@ -8,59 +8,61 @@
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
     <header class="page__header header">
-
-      <nav class="header__nav header__nav--closed header__nav--nojs">
-        <div class="header__logo logo">
-          <a class="logo__link">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="images/logo-large.svg">
-              <source media="(min-width: 768px)" srcset="images/logo-medium.svg">
-              <img class="logo__image" src="images/logo-small.svg" width="32" height="36" alt="Drink2Go">
-            </picture>
-          </a>
-          <span class="logo__slogan">
-            Интернет-магазин<br>
-            кофейных напитков</span>
-        </div>
-
-        <ul class="header__site-menu site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--current">Главная</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">Каталог</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">Доставка</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">О нас</a>
-          </li>
-        </ul>
-
-        <ul class="header__user-menu user-menu">
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.67 4a2.67 2.67 0 1 1-5.34 0 2.67 2.67 0 0 1 5.34 0Zm1.33 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-8.8 8.31a7.55 7.55 0 0 1 4.8-1.64c1.84 0 3.56.6 4.8 1.64a4.83 4.83 0 0 1 1.87 3.69h1.33c0-1.77-.84-3.46-2.34-4.71a8.88 8.88 0 0 0-5.66-1.96c-2.12 0-4.16.7-5.66 1.96a6.16 6.16 0 0 0-2.34 4.71h1.33c0-1.33.63-2.66 1.87-3.69Z" fill="currentColor"/></svg>
-              <span class="user-menu__text">Войти</span>
+      <div class="header__container container">
+        <nav class="header__nav header__nav--closed header__nav--nojs">
+          <div class="header__logo logo">
+            <a class="logo__link">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/logo-large.svg">
+                <source media="(min-width: 768px)" srcset="images/logo-medium.svg">
+                <img class="logo__image" src="images/logo-small.svg" width="32" height="36" alt="Drink2Go">
+              </picture>
             </a>
-          </li>
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m5.66 3.88.23 2.79h4.22l.23-2.8a2.35 2.35 0 1 0-4.68 0Zm5.78 2.79.23-2.68a3.68 3.68 0 1 0-7.34 0l.23 2.68h-4.56l.19 1.33.82 5.71a2.67 2.67 0 0 0 2.64 2.29h8.7c1.33 0 2.46-.98 2.64-2.29l.82-5.71.19-1.33h-4.55Zm-.1 1.33h-.06l-.22 2.67h3.02l.38-2.67h-3.13Zm-1.4 0h-3.88l.22 2.67h3.44l.22-2.67Zm-5.22 0h-3.18l.38 2.67h3.02l-.22-2.67Zm1.9 6.67-.23-2.67h3.22l-.22 2.67h-2.78Zm4.33-2.67-.23 2.67h1.63c.67 0 1.23-.5 1.32-1.15l.22-1.52h-2.94Zm-5.9 0 .23 2.67h-1.63c-.67 0-1.23-.5-1.32-1.15l-.22-1.52h2.94Z" fill="currentColor"/></svg>
-              <span class="user-menu__text">Корзина</span>
-            </a>
-          </li>
-        </ul>
+            <span class="logo__slogan">
+              Интернет-магазин<br>
+              кофейных напитков</span>
+          </div>
 
-        <button class="header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </nav>
+          <ul class="header__site-menu site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--current">Главная</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Каталог</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Доставка</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">О нас</a>
+            </li>
+          </ul>
+
+          <ul class="header__user-menu user-menu">
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">
+                <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.67 4a2.67 2.67 0 1 1-5.34 0 2.67 2.67 0 0 1 5.34 0Zm1.33 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-8.8 8.31a7.55 7.55 0 0 1 4.8-1.64c1.84 0 3.56.6 4.8 1.64a4.83 4.83 0 0 1 1.87 3.69h1.33c0-1.77-.84-3.46-2.34-4.71a8.88 8.88 0 0 0-5.66-1.96c-2.12 0-4.16.7-5.66 1.96a6.16 6.16 0 0 0-2.34 4.71h1.33c0-1.33.63-2.66 1.87-3.69Z" fill="currentColor"/></svg>
+                <span class="user-menu__text">Войти</span>
+              </a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">
+                <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m5.66 3.88.23 2.79h4.22l.23-2.8a2.35 2.35 0 1 0-4.68 0Zm5.78 2.79.23-2.68a3.68 3.68 0 1 0-7.34 0l.23 2.68h-4.56l.19 1.33.82 5.71a2.67 2.67 0 0 0 2.64 2.29h8.7c1.33 0 2.46-.98 2.64-2.29l.82-5.71.19-1.33h-4.55Zm-.1 1.33h-.06l-.22 2.67h3.02l.38-2.67h-3.13Zm-1.4 0h-3.88l.22 2.67h3.44l.22-2.67Zm-5.22 0h-3.18l.38 2.67h3.02l-.22-2.67Zm1.9 6.67-.23-2.67h3.22l-.22 2.67h-2.78Zm4.33-2.67-.23 2.67h1.63c.67 0 1.23-.5 1.32-1.15l.22-1.52h-2.94Zm-5.9 0 .23 2.67h-1.63c-.67 0-1.23-.5-1.32-1.15l-.22-1.52h2.94Z" fill="currentColor"/></svg>
+                <span class="user-menu__text">Корзина</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main class="page__main">
@@ -68,59 +70,84 @@
 
       <section class="promo">
         <h2 class="visually-hidden">Новинки</h2>
-        <div class="promo__slider slider">
 
-          <div class="slider__item slide slide--flat-white">
-            <div class="slide__container container">
+        <div class="promo__slider slider swiper">
+          <div class="slider__wrapper swiper-wrapper">
 
-              <picture class="slide__picture">
-                <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
-                <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
-              </picture>
+            <div class="slider__item slide slide--flat-white swiper-slide">
+              <div class="slide__container container">
+                <picture class="slide__picture">
+                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
+                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
+                </picture>
 
-              <div class="slide__content">
-                <span class="slide__badge">Новинка!</span>
-                <h3 class="slide__heading">Декаф Флэт Уайт</h3>
-                <p class="slide__desc">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-                <div class="slide__order">
-                  <span class="slide__price">
-                    <span class="slide__old-price">295₽</span>
-                    225₽
-                  </span>
-                  <a class="slide__button button" href="#">Заказать</a>
+                <div class="slide__content">
+                  <span class="slide__badge">Новинка!</span>
+                  <h3 class="slide__heading">Декаф Флэт Уайт</h3>
+                  <p class="slide__desc">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <div class="slide__order">
+                    <span class="slide__price">
+                      <span class="slide__old-price">295₽</span>
+                      225₽
+                    </span>
+                    <a class="slide__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item slide slide--lavender-latte swiper-slide">
+              <div class="slide__container container">
+                <picture class="slide__picture">
+                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
+                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
+                </picture>
+
+                <div class="slide__content">
+                  <span class="slide__badge">Новинка!</span>
+                  <h3 class="slide__heading">Лавандовый Латте</h3>
+                  <p class="slide__desc">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="slide__order">
+                    <span class="slide__price">
+                      <span class="slide__old-price">285₽</span>
+                      265₽
+                    </span>
+                    <a class="slide__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item slide slide--espresso swiper-slide">
+              <div class="slide__container container">
+                <picture class="slide__picture">
+                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
+                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
+                </picture>
+
+                <div class="slide__content">
+                  <span class="slide__badge">Новинка!</span>
+                  <h3 class="slide__heading">Тройной Эспрессо</h3>
+                  <p class="slide__desc">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="slide__order">
+                    <span class="slide__price">
+                      <span class="slide__old-price">395₽</span>
+                      375₽
+                    </span>
+                    <a class="slide__button button" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- <div class="promo__slide slide slide--lavender-latte">
-            <span>Новинка!</span>
-            <h3>Лавандовый Латте</h3>
-            <p>Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <span>
-              <span>285₽</span>
-              265₽
-            </span>
-            <a href="#">Заказать</a>
-          </div>
+          <div class="slider__pagination swiper-pagination"></div>
 
-          <div class="promo__slide slide slide--espresso">
-            <span>Новинка!</span>
-            <h3>Тройной Эспрессо</h3>
-            <p>Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <span>
-              <span>395₽</span>
-              375₽
-            </span>
-            <a href="#">Заказать</a>
-          </div> -->
-
-          <div class="slider__pagination"></div>
-
-          <div class="slider__button slider__button--prev"></div>
-          <div class="slider__button slider__button--next"></div>
-
+          <button class="slider__button slider__button--prev"></button>
+          <button class="slider__button slider__button--next"></button>
         </div>
       </section>
 
@@ -373,7 +400,7 @@
                     <a class="pagination__link" href="#">1</a>
                   </li>
                   <li class="pagination__item">
-                    <a class="pagination__link pagination__link--current"  href="#">2</a>
+                    <a class="pagination__link pagination__link--current">2</a>
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">3</a>
@@ -487,14 +514,16 @@
 
         <p class="footer__developer developer">
           Разработано в
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <svg class="developer__image"  width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="currentColor"/>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="developer__image"  width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="currentColor"/>
             </svg>
+          </a>
         </p>
       </div>
     </footer>
 
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

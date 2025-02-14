@@ -13,8 +13,37 @@
   border: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: $color-alt-primary-lighter;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
+
+  &:disabled {
+    background-color: $color-base-gray;
+    pointer-events: none;
+  }
+
   &--secondary {
     background-color: $color-base-white;
     color: $color-base-primary;
+
+    &:hover,
+    &:focus {
+    color: $color-base-white;
+  }
+
+    &:active {
+      color: $color-base-white;
+  }
+
+    &:disabled {
+      background-color: $color-alt-light-grey;
+      color: $color-base-white;
+      pointer-events: none;
+    }
   }
 }

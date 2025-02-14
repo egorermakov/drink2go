@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: 24px auto;
   gap: 12px;
+  cursor: pointer;
+
+  &:has(:disabled) {
+    cursor: default;
+  }
 }
 
 .control__input {
@@ -29,29 +34,70 @@
   }
 
   .control--radio &::before {
+    background-color: $color-base-white;
     border: 2px solid $color-base-gray;
     border-radius: 50%;
+  }
+
+  .control--radio .control__input:disabled + &::before {
+    background-color: transparent;
   }
 
   .control--radio .control__input:checked + &::before {
     border: 2px solid $color-base-primary;
   }
 
-  .control--radio .control__input:checked + &::after {
-    background-color: $color-base-primary;
+  .control--radio .control__input:disabled + & {
+    color: $color-base-gray;
+  }
+
+  .control--radio .control__input:disabled + &::before {
+    border: 2px solid $color-alt-light-grey;
+  }
+
+  .control--radio .control__input + &::after {
     background-clip: content-box;
     border: 4px solid transparent;
     border-radius: 50%;
   }
 
+  .control--radio .control__input:hover + &::after,
+  .control--radio .control__input:focus + &::after {
+    background-color: $color-alt-primary-opacity;
+  }
+
+  .control--radio .control__input:checked + &::after {
+    background-color: $color-base-primary;
+  }
+
+  .control--radio .control__input:disabled + &::after {
+    background-color: transparent;
+  }
+
+  .control--radio .control__input:checked:disabled + &::after {
+    background-color: $color-alt-light-grey;
+  }
+
   .control--checkbox &::before {
-    background: $color-base-gray;
+    background-color: $color-base-gray;
     width: 42px;
     border-radius: 12px;
   }
 
+  .control--checkbox:hover &::before,
+  .control--checkbox:focus &::before {
+    background-color: $color-alt-primary-opacity;
+    border: 2px solid $color-alt-primary-lighter;
+  }
+
   .control--checkbox .control__input:checked + &::before {
-    background: $color-base-primary;
+    background-color: $color-base-primary;
+    border: 2px solid transparent;
+  }
+
+  .control--checkbox .control__input:disabled + &::before {
+    background-color: $color-alt-light-grey;
+    border: 2px solid transparent;
   }
 
   .control--checkbox &::after {
@@ -65,5 +111,17 @@
 
   .control--checkbox .control__input:checked + &::after {
     margin-left: auto;
+  }
+
+  .control--checkbox .control__input:disabled + & {
+    color: $color-base-gray;
+  }
+
+  .control--checkbox .control__input:disabled + &::after {
+    background-color: $bg-lightest-grey;
+  }
+
+  .control--checkbox .control__input:disabled:checked + &::after {
+    background-color: $color-base-gray;
   }
 }

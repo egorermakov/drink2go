@@ -28,23 +28,58 @@
   color: $color-base-primary;
   text-decoration: none;
 
+  &:hover,
+  &:focus {
+    background-color: $color-alt-primary-lighter;
+    color: $color-base-white;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+    color: $color-base-white;
+  }
+
+  &--disabled {
+    background-color: $color-alt-light-grey;
+    color: $color-base-white;
+    pointer-events: none;
+  }
+
   &--current {
     font-weight: 600;
     background: transparent;
     color: $color-base-black;
+    pointer-events: none;
   }
+
 }
 
-.pagination__prev::before,
-.pagination__next::before {
+.pagination__prev,
+.pagination__next {
+
+  &::before {
   content: "";
   width: 10px;
   height: 10px;
-  background-image: url("../../icons/chevron.svg");
+  background-color: $color-base-primary;
+  -webkit-mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
+  mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
 
-  @media (min-width: $tablet-width) {
-    content: none;
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $color-base-white;
+  }
+}
+
+.pagination__link--disabled.pagination__prev::before,
+.pagination__link--disabled.pagination__next::before {
+  background-color: $color-base-white;
 }
 
 .pagination__prev::before {

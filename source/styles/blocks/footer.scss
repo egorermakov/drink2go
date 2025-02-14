@@ -1,4 +1,8 @@
 .footer__container {
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,19 +15,12 @@
 }
 
 .footer__column {
-  padding: 20px 0 21px;
+  padding: 20px;
+  border-bottom: 1px solid $color-base-secondary;
 
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      content: "";
-      margin-top: 21px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      display: block;
-      height: 1px;
-      background-color: $color-base-secondary;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 20px;
+    border: none;
   }
 }
 

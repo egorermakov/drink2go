@@ -1,17 +1,16 @@
+.header__container {
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+  }
+}
+
 .header__nav {
-  margin: 0 auto;
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 728px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 1360px;
     justify-content: space-between;
   }
 }
