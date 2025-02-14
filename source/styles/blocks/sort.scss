@@ -32,4 +32,15 @@
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: right 10px center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+  }
+}
+.sort__option {
+  background-color: $color-base-white;
+  color: $color-base-black;
 }
