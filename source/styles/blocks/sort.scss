@@ -2,10 +2,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-end;
-  }
 }
 
 .sort__label {

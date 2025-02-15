@@ -23,6 +23,8 @@
   grid-template-columns: max-content auto;
   gap: 10px;
   align-items: center;
+  font-size: 16px;
+  line-height: 24px;
 
   &::after,
   &::before {

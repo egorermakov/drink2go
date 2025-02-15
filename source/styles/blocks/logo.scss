@@ -4,6 +4,12 @@
     align-items: center;
     gap: 20px;
   }
+
+  &--footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .logo__link {
@@ -33,10 +39,16 @@
 
 .logo__slogan {
   display: none;
+  min-width: 130px;
+  font-size: 12px;
+  line-height: 16px;
+
+  .logo--footer & {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;
-    min-width: 130px;
-    font-size: 12px;
   }
 }

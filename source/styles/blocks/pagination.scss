@@ -57,6 +57,10 @@
 .pagination__prev,
 .pagination__next {
 
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
+
   &::before {
   content: "";
   width: 10px;

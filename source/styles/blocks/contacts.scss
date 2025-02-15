@@ -1,5 +1,6 @@
 .contacts__list {
   @include reset-list;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;

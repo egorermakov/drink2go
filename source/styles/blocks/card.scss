@@ -26,16 +26,28 @@
   }
 }
 
-.card__picture {
+.card__link-image {
   grid-area: picture;
-  margin-bottom: 24px;
+  display: flex;
   justify-self: center;
+}
+
+.card__image {
+  margin-bottom: 24px;
+  display: block;
+  width: 130px;
+  height: 188px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .card__link {
   grid-area: title;
   text-decoration: none;
   color: $color-base-black;
+  display: block;
 }
 
 .card__title {
@@ -44,6 +56,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .card__desc {
@@ -52,6 +70,10 @@
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .card__price {
