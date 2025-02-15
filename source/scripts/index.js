@@ -25,7 +25,7 @@ const slider = new Swiper('.slider', {
   },
 });
 
-const map = L.map('map').setView([59.968142, 30.316425], 17);
+const map = L.map('map').setView([59.968142, 30.316425], 18);
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
@@ -36,8 +36,6 @@ const mapPin = L.icon({
   iconUrl: '../images/map-pin.svg',
 
   iconSize:     [38, 50],
-  iconAnchor:   [-75, 75],
-  popupAnchor:  [-3, -76]
 });
 
 L.marker([59.968142, 30.316425], {icon: mapPin}).addTo(map);
