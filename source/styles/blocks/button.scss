@@ -33,12 +33,12 @@
 
     &:hover,
     &:focus {
-    color: $color-base-white;
-  }
+      color: $color-base-white;
+    }
 
     &:active {
       color: $color-base-white;
-  }
+    }
 
     &:disabled {
       background-color: $color-alt-light-grey;

@@ -69,87 +69,84 @@
     <main class="page__main">
       <h1 class="visually-hidden">Интернет-магазин по продаже кофейных напитков</h1>
 
-      <section class="promo">
+      <section class="slider swiper">
         <h2 class="visually-hidden">Новинки</h2>
+        <div class="slider__wrapper swiper-wrapper">
 
-        <div class="promo__slider slider swiper">
-          <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__item slide slide--flat-white swiper-slide">
+            <div class="slide__container container">
+              <picture class="slide__picture">
+                <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
+                <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
+              </picture>
 
-            <div class="slider__item slide slide--flat-white swiper-slide">
-              <div class="slide__container container">
-                <picture class="slide__picture">
-                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
-                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
-                </picture>
-
-                <div class="slide__content">
-                  <span class="slide__badge">Новинка!</span>
-                  <h3 class="slide__heading">Декаф Флэт Уайт</h3>
-                  <p class="slide__desc">Свежесваренный Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
-                  <div class="slide__order">
-                    <span class="slide__price">
-                      <span class="slide__old-price">295₽</span>
-                      225₽
-                    </span>
-                    <a class="slide__button button" href="#">Заказать</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__item slide slide--lavender-latte swiper-slide">
-              <div class="slide__container container">
-                <picture class="slide__picture">
-                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
-                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
-                </picture>
-
-                <div class="slide__content">
-                  <span class="slide__badge">Новинка!</span>
-                  <h3 class="slide__heading">Лавандовый Латте</h3>
-                  <p class="slide__desc">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-                  <div class="slide__order">
-                    <span class="slide__price">
-                      <span class="slide__old-price">285₽</span>
-                      265₽
-                    </span>
-                    <a class="slide__button button" href="#">Заказать</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__item slide slide--espresso swiper-slide">
-              <div class="slide__container container">
-                <picture class="slide__picture">
-                  <source media="(min-width: 1440px)" srcset="images/slider/slide-1-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="images/slider/slide-1-tablet@1x.png">
-                  <img class="slide__image" src="images/slider/slide-1-mobile@1x.png" width="280" height="280" alt="Декаф Флэт Уайт">
-                </picture>
-
-                <div class="slide__content">
-                  <span class="slide__badge">Новинка!</span>
-                  <h3 class="slide__heading">Тройной Эспрессо</h3>
-                  <p class="slide__desc">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-                  <div class="slide__order">
-                    <span class="slide__price">
-                      <span class="slide__old-price">395₽</span>
-                      375₽
-                    </span>
-                    <a class="slide__button button" href="#">Заказать</a>
-                  </div>
+              <div class="slide__content">
+                <span class="slide__badge">Новинка!</span>
+                <h3 class="slide__heading">Декаф Флэт Уайт</h3>
+                <p class="slide__desc">Свежесваренный Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+                <div class="slide__order">
+                  <span class="slide__price">
+                    <span class="slide__old-price">295₽</span>
+                    225₽
+                  </span>
+                  <a class="slide__button button" href="#">Заказать</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="slider__pagination swiper-pagination"></div>
+          <div class="slider__item slide slide--lavender-latte swiper-slide">
+            <div class="slide__container container">
+              <picture class="slide__picture">
+                <source media="(min-width: 1440px)" srcset="images/slider/slide-2-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="images/slider/slide-2-tablet@1x.png">
+                <img class="slide__image" src="images/slider/slide-2-mobile@1x.png" width="280" height="280" alt="Лавандовый Латте">
+              </picture>
 
-          <button class="slider__button slider__button--prev"></button>
-          <button class="slider__button slider__button--next"></button>
+              <div class="slide__content">
+                <span class="slide__badge">Новинка!</span>
+                <h3 class="slide__heading">Лавандовый Латте</h3>
+                <p class="slide__desc">Невероятное сочетание перуанской высокогорной<br> арабики с молоком ламы и лавандовым сиропом унесёт<br> вас прямо на вершину Радужных гор</p>
+                <div class="slide__order">
+                  <span class="slide__price">
+                    <span class="slide__old-price">285₽</span>
+                    265₽
+                  </span>
+                  <a class="slide__button button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__item slide slide--espresso swiper-slide">
+            <div class="slide__container container">
+              <picture class="slide__picture">
+                <source media="(min-width: 1440px)" srcset="images/slider/slide-3-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="images/slider/slide-3-tablet@1x.png">
+                <img class="slide__image" src="images/slider/slide-3-mobile@1x.png" width="280" height="280" alt="Тройной Эспрессо">
+              </picture>
+
+              <div class="slide__content">
+                <span class="slide__badge">Новинка!</span>
+                <h3 class="slide__heading">Тройной Эспрессо</h3>
+                <p class="slide__desc">Мощнее укола адреналина, чернее самой тёмной ночи,<br> этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="slide__order">
+                  <span class="slide__price">
+                    <span class="slide__old-price">395₽</span>
+                    375₽
+                  </span>
+                  <a class="slide__button button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="slider__pagination swiper-pagination"></div>
+
+        <button class="slider__button slider__button--prev"></button>
+        <button class="slider__button slider__button--next"></button>
       </section>
 
       <section class="features">

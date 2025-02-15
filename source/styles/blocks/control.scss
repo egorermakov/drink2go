@@ -41,10 +41,6 @@
     border-radius: 50%;
   }
 
-  .control--radio .control__input:disabled + &::before {
-    background-color: transparent;
-  }
-
   .control--radio .control__input:checked + &::before {
     border: 2px solid $color-base-primary;
   }
@@ -54,6 +50,7 @@
   }
 
   .control--radio .control__input:disabled + &::before {
+    background-color: transparent;
     border: 2px solid $color-alt-light-grey;
   }
 

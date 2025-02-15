@@ -8,7 +8,7 @@ navToggle.addEventListener('click', () => {
   navMain.classList.toggle('header__nav--opened');
 });
 
-const promoSlider = new Swiper('.promo__slider', {
+const slider = new Swiper('.slider', {
   direction: 'horizontal',
   loop: true,
 
@@ -25,14 +25,14 @@ const promoSlider = new Swiper('.promo__slider', {
   },
 });
 
-var map = L.map('map').setView([59.968142, 30.316425], 17);
+const map = L.map('map').setView([59.968142, 30.316425], 17);
 
-var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var mapPin = L.icon({
+const mapPin = L.icon({
   iconUrl: '../images/map-pin.svg',
 
   iconSize:     [38, 50],

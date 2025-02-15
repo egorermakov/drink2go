@@ -51,23 +51,21 @@
     color: $color-base-black;
     pointer-events: none;
   }
-
 }
 
 .pagination__prev,
 .pagination__next {
-
   @media (min-width: $tablet-width) {
     padding: 8px 20px;
   }
 
   &::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: $color-base-primary;
-  -webkit-mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
-  mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: $color-base-primary;
+    -webkit-mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
+    mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
 
     @media (min-width: $tablet-width) {
       content: none;
