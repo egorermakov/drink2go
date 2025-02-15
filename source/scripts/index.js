@@ -33,7 +33,7 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 }).addTo(map);
 
 const mapPin = L.icon({
-  iconUrl: '../images/map-pin.svg',
+  iconUrl: 'images/map-pin.svg',
 
   iconSize:     [38, 50],
 });
