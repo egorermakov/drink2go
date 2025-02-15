@@ -154,8 +154,18 @@
 
         <div class="slider__pagination swiper-pagination"></div>
 
-        <button class="slider__button slider__button--prev"></button>
-        <button class="slider__button slider__button--next"></button>
+        <button class="slider__button slider__button--prev">
+          <span class="visually-hidden">Назад.</span>
+          <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="currentColor" />
+          </svg>
+        </button>
+        <button class="slider__button slider__button--next">
+          <span class="visually-hidden">Вперед.</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28339 0L5 1.32082L13.4332 10L5 18.6792L6.28339 20L16 10L6.28339 0Z" fill="currentColor" />
+          </svg>
+        </button>
       </section>
 
       <section class="features">
@@ -407,13 +417,16 @@
                   <li class="pagination__item">
                     <a class="pagination__link pagination__prev" href="#">
                       <span class="pagination__text">Назад</span>
+                      <svg class="pagination__icon" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z" fill="currentColor" />
+                      </svg>
                     </a>
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">1</a>
                   </li>
                   <li class="pagination__item">
-                    <a class="pagination__link pagination__link--current" role="link" aria-disabled="true">2</a>
+                    <a class="pagination__link pagination__link--current" >2</a>
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">3</a>
@@ -421,6 +434,9 @@
                   <li class="pagination__item">
                     <a class="pagination__link pagination__next" href="#">
                       <span class="pagination__text">Вперёд</span>
+                      <svg class="pagination__icon" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="currentColor" />
+                      </svg>
                     </a>
                   </li>
                 </ul>

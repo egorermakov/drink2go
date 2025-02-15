@@ -57,40 +57,21 @@
 .pagination__next {
   @media (min-width: $tablet-width) {
     padding: 8px 20px;
-  }
-
-  &::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: $color-base-primary;
-    -webkit-mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
-    mask: url("../../icons/chevron.svg") no-repeat 50% 50%;
-
-    @media (min-width: $tablet-width) {
-      content: none;
-    }
-  }
-
-  &:hover::before,
-  &:focus::before,
-  &:active::before {
-    background-color: $color-base-white;
+    color: $color-base-primary;
   }
 }
 
-.pagination__link--disabled.pagination__prev::before,
-.pagination__link--disabled.pagination__next::before {
-  background-color: $color-base-white;
+.pagination__icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.pagination__prev::before {
-  transform: rotate(90deg);
+.pagination__link--disabled.pagination__prev,
+.pagination__link--disabled.pagination__next {
+  color: $color-base-white;
 }
 
-.pagination__next::before {
-  transform: rotate(-90deg);
-}
 
 .pagination__text {
   display: none;
