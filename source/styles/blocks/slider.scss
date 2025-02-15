@@ -56,12 +56,13 @@
   appearance: none;
   background: transparent;
   border: none;
+  color: $color-base-primary;
   cursor: pointer;
   z-index: 1;
 
   &:disabled {
     pointer-events: none;
-    color: $color-base-gray;;
+    color: $color-base-gray;
   }
 
   @media (min-width: $tablet-width) {
@@ -75,7 +76,6 @@
 
   &--prev {
     left: 0;
-    color: $color-base-primary;
 
     &:hover,
     &:focus {
